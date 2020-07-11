@@ -1,50 +1,19 @@
-body {
-    font-family: Helvetica, Verdana, Arial, Calibri, sans-serif;
+.jumbotron {
+    background-color: #9FA8DA;
+    padding: 20px;
 }
 
-header {
-    color: white;
+.navbar {
+    background-color: #E8EAF6;
 }
 
-.alignleft {
-    background-color: #144959;
-    padding: 30px;
-	float: left;
-}
-
-.alignright {
-    background-color: #144959;
-    padding: 30px;
-	float: right;
-}
-
-#navbar {
-    background-color: #90B8C4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
-.menu-nav {
-    padding: 10px;
-    color: white;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu-nav ul a {
-    color: white;
-}
-
-.grid-container {
-    display: grid;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-    grid-template-columns: auto auto auto auto;
+.nav-link {
+    color: black;
 }
 
 .grid-item {
     padding: 50px;
+    margin: 10px;
     text-align: center;
     border: 5px solid black;
     border-radius: 30px;
