@@ -11,10 +11,11 @@
     color: black;
 }
 
-.grid-item {
+.tile {
     padding: 50px;
     margin: 10px;
     text-align: center;
     border: 5px solid black;
     border-radius: 30px;
+    color: black;
 }
