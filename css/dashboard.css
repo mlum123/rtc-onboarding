@@ -1,3 +1,5 @@
+@import "./node_modules/bootstrap/dist/css/bootstrap.css";
+
 .jumbotron {
     background-color: #9FA8DA;
     padding: 20px;
