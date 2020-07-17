@@ -1,0 +1,34 @@
+.jumbotron {
+    background-color: #9FA8DA;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #E8EAF6;
+}
+
+.nav-link {
+    color: black;
+}
+
+.game {
+    padding: 50px;
+    margin: 20px;
+    height: 480px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #9FA8DA;
+}
+
+.text-background {
+    margin-bottom: 20px;
+    height: 320px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.text {
+    padding: 20px;
+    text-align: left;
+}
