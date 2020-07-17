@@ -1,3 +1,5 @@
+@import "./node_modules/bootstrap/dist/css/bootstrap.css";
+
 .jumbotron {
     background-color: #9FA8DA;
     padding: 20px;
@@ -11,10 +13,11 @@
     color: black;
 }
 
-.grid-item {
+.tile {
     padding: 50px;
     margin: 10px;
     text-align: center;
     border: 5px solid black;
     border-radius: 30px;
+    color: black;
 }

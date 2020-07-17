@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/dashboard.css" />
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="./css/dashboard.css" />
 
         <title>RTC Onboarding Dashboard</title>
     </head>
@@ -15,11 +15,15 @@
         <header class="jumbotron">
             <div class="row">
                 <h4 class="col-9">Rewriting the Code: Professional Etiquette Onboarding</h4>
-                <h4 class="col-2 ml-auto">First Last</h4>
+                <h4 class="col-2 ml-auto"><em>First Last</em></h4>
             </div>
         </header>
 
-        <h2 class="container">Dashboard</h2>
+        <div class="container">
+            <div class="row">
+                <h2 class="offset-3">Dashboard</h2>
+            </div>
+        </div>
         
         <div class="container">
             <div class="row">
@@ -47,41 +51,35 @@
                     </ul>
                 </nav>
 
-
-
                 <div class="col-9 offset-1">
                     <div class="row">
-                        <div class="grid-item col-3">
+                        <a class="tile col-3" href="#">
                             <p>total progress</p>
                             <p>90%</p>
-                        </div>
-                        <div class="grid-item col-3">
+                        </a>
+                        <a class="tile col-3" href="./module1.html">
                             <p>module 1</p>
-                            <p>50%</p>
-                        </div>
-                        <div class="grid-item col-3">
+                            <p>90%</p>
+                        </a>
+                        <a class="tile col-3" href="./module2.html">
                             <p>module 2</p>
-                            <p>40%</p>
-                        </div>
+                            <p>90%</p>
+                        </a>
                     </div>
                     <div class="row">
-                        <div class="grid-item col-3">
-                            <p>module 3</p>
-                            <p>70%</p>
-                        </div>
-                        <div class="grid-item col-3">
+                        <a class="tile col-3" href="./module3.html">
                             <p>module 4</p>
                             <p>90%</p>
-                        </div>
-                        <div class="grid-item col-3">
+                        </a>
+                        <a class="tile col-3" href="./module4.html">
                             <p>module 5</p>
                             <p>90%</p>
-                        </div>
+                        </a>
+                        <a class="tile col-3" href="./module5.html">
+                            <p>module 6</p>
+                            <p>90%</p>
+                        </a>
                     </div>
-                </div>
-
-                <div>
-
                 </div>
             </div>
         </div>
@@ -91,9 +89,9 @@
       </footer>
 
        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
   </body>
 </html>
