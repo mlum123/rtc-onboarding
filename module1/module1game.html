@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Demo</title>
+	<link rel="stylesheet" href="styles.css">
+	<script defer src="module.js"></script>
+</head>
+<body>
+	<div class = "container">
+
+		<!-- div 1 Start + Description Page-->
+		<div id= "start">
+			<div id= "heading">
+				<h1>Module 1: RTC Events</h1>
+			</div>
+		
+			<div id= "description">
+				<p>This includes all in-person and virtual events like company visits, company-sponsored events, student leader-hosted social events, and webinars.
+				</p>
+			</div>
+			<div class= "control">
+				<button id ="start-button" class="start btn">Start</button>
+			</div>
+		</div>
+
+		<!-- --------------------------------------------------------------------------------- -->
+		<!-- div 2 Reading Page-->
+		<div id= "reading" class = "hide">
+				<h2 id= "reading-point">Point</h2>
+				<p id= "reading-explanation">Detail Explanation</p>
+				<div class= "control">
+					<button id ="back-button" class="back btn hide">Back</button>
+					<button id ="next-button" class="next btn hide">Next</button>
+					<button id ="go-to-scenario-button" class="go-scenario btn hide">Test Yourself!</button>
+				</div>
+		</div>
+
+		<!-- --------------------------------------------------------------------------------- -->
+		<!-- div 3 Scenario + Question Page-->
+		<div id= "questions" class = "hide">
+			<div id= "image">
+				<img src="">
+			</div>
+
+			<div id= "scenario">
+				<p>Scenario</p>
+			</div>
+
+			<div id= "options" class="btn-grid">
+				<button class="btn">Anwser A</button>
+				<button class="btn">Anwser B</button>
+				<button class="btn">Anwser C</button>
+				<button class="btn">Anwser D</button>
+			</div>
+
+			
+
+		</div>
+
+		<!-- --------------------------------------------------------------------------------- -->
+		<!-- div 4 Explanation Page-->
+		<div id= "explanation" class = "hide">
+			<h2 id= "if-correct">Point</h2>
+			<p id= "scenario-explanation">Detail Explanation</p>
+			<div class= "control">
+				<button id ="got-it-button" class="got-it btn hide">Got it!</button>
+			</div>
+		</div>
+
+		<!-- --------------------------------------------------------------------------------- -->
+		<!-- div 5 Finish Page-->
+		<div id= "finish" class = "hide">
+			<h2 id= "finish-module">Congratulations! You have finished this module!</h2>
+			<div class= "control">
+				<button onclick="window.location='index.html';"id ="finish-button" class="finish btn">Go back to home page</button>
+			</div>
+		</div>
+	</div>
+
+	
+
+</body>
+</html>

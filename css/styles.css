@@ -3,14 +3,49 @@
     padding: 20px;
 }
 
+.jumbotron h4 {
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+}
+
 .navbar {
-    background-color: #E8EAF6;
+    background-color: #9FA8DA;
+    font-style: italic;
+    color: white;
+}
+
+hr {
+    background-color: white;
 }
 
 .nav-link {
-    color: black;
+    color: white;
 }
 
+a:hover {
+    font-weight: bold;
+    color: white;
+}
+
+.description {
+    margin-top: 20px;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.btn {
+    font-style: italic;
+    color: white;
+    background-color: #9FA8DA;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+/*
 .game {
     padding: 50px;
     margin: 20px;
@@ -32,3 +67,4 @@
     padding: 20px;
     text-align: left;
 }
+*/
