@@ -1,6 +1,7 @@
 .jumbotron {
     background-color: #9FA8DA;
     padding: 20px;
+    margin: 0px;
 }
 
 .jumbotron h4 {
@@ -8,6 +9,7 @@
 }
 
 h2 {
+    margin-top: 20px;
     font-weight: bold;
 }
 
@@ -15,6 +17,7 @@ h2 {
     background-color: #9FA8DA;
     font-style: italic;
     color: white;
+    padding: 15px;
 }
 
 hr {
@@ -25,9 +28,13 @@ hr {
     color: white;
 }
 
-a:hover {
+.nav-link:hover {
     font-weight: bold;
     color: white;
+}
+
+.content {
+    margin: 30px;
 }
 
 .description {
@@ -43,6 +50,11 @@ a:hover {
     background-color: #9FA8DA;
     margin-bottom: 20px;
     border-radius: 12px;
+}
+
+.btn:hover {
+    font-weight: bold;
+    color: white;
 }
 
 /*
