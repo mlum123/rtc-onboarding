@@ -1,85 +1,141 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset = "UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Demo</title>
-	<link rel="stylesheet" href="styles.css">
-	<script defer src="module.js"></script>
-</head>
-<body>
-	<div class = "container">
-
-		<!-- div 1 Start + Description Page-->
-		<div id= "start">
-			<div id= "heading">
-				<h1>Module 1: RTC Events</h1>
-			</div>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		
-			<div id= "description">
-				<p>This includes all in-person and virtual events like company visits, company-sponsored events, student leader-hosted social events, and webinars.
-				</p>
-			</div>
-			<div class= "control">
-				<button id ="start-button" class="start btn">Start</button>
-			</div>
-		</div>
+        <!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		
+		<link rel="stylesheet" href="../css/styles.css" />
+		<link rel="stylesheet" href="../css/game.css">
+		
+		<script defer src="module1.js"></script>
 
-		<!-- --------------------------------------------------------------------------------- -->
-		<!-- div 2 Reading Page-->
-		<div id= "reading" class = "hide">
-				<h2 id= "reading-point">Point</h2>
-				<p id= "reading-explanation">Detail Explanation</p>
-				<div class= "control">
-					<button id ="back-button" class="back btn hide">Back</button>
-					<button id ="next-button" class="next btn hide">Next</button>
-					<button id ="go-to-scenario-button" class="go-scenario btn hide">Test Yourself!</button>
-				</div>
-		</div>
+        <title>RTC Onboarding Module 1</title>
+    </head>
+    
+    <body>
+        <header class="jumbotron">
+            <div class="row">
+                <h4 class="col-9">/> Rewriting the Code: Professional Etiquette Onboarding</h4>
+            </div>
+        </header>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar col-2" id="navbar">
+                    <ul class="navbar-nav">
+                        <li>Hello, Sabrina Lee!</li>
+                        <hr class="col-10">
+                        <li class="nav-item">
+                            <a href="../dashboard.html" class="nav-link">dashboard</a>
+                        </li>
+                        <li>modules</li>
+                        <div class="offset-1">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><strong>RTC Events</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../module2/module2.html" class="nav-link">Meetings + Outreach</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../module3/module3.html" class="nav-link">Asking for a Referral</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../module4/module4.html" class="nav-link">Communicating with RTC Partner Companies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../module5/module5.html" class="nav-link">Making Virtual Connections</a>
+                            </li>
+                        </div>
+                        <hr class="col-10">
+                        <li>log out</li>
+                    </ul>
+                </nav>
 
-		<!-- --------------------------------------------------------------------------------- -->
-		<!-- div 3 Scenario + Question Page-->
-		<div id= "questions" class = "hide">
-			<div id= "image">
-				<img src="">
-			</div>
+                <div class="content col-9">
+                    <div class="row">
+                        <h2>&nbsp RTC EVENTS</h2>
+                        <h4 class="ml-auto"><em>progress: 20%</em></h4>
+                    </div>
+                    <div class="game">
+                        <div>
 
-			<div id= "scenario">
-				<p>Scenario</p>
-			</div>
+							<!-- div 1 Start Page-->
+							<div id="start">
+								<div class="control">
+									<button id="start-button" class="start btn">Start Game</button>
+								</div>
+							</div>
 
-			<div id= "options" class="btn-grid">
-				<button class="btn">Anwser A</button>
-				<button class="btn">Anwser B</button>
-				<button class="btn">Anwser C</button>
-				<button class="btn">Anwser D</button>
-			</div>
+							<!-- --------------------------------------------------------------------------------- -->
+							<!-- div 2 Reading Page-->
+							<div id= "reading" class = "hide">
+								<h2 id= "reading-point">Point</h2>
+								<p id= "reading-explanation">Detail Explanation</p>
+								<div class= "control">
+									<button id ="back-button" class="back btn hide">Back</button>
+									<button id ="next-button" class="next btn hide">Next</button>
+									<button id ="go-to-scenario-button" class="go-scenario btn hide">Test Yourself!</button>
+								</div>
+							</div>
+						
+							<!-- --------------------------------------------------------------------------------- -->
+							<!-- div 2 Scenario + Question Page-->
+							<div id="questions" class="hide">
+								<div id="image">
+									<img src="">
+								</div>
+						
+								<div id="scenario">
+									<p>Scenario</p>
+								</div>
+						
+								<div id="options" class="btn-grid">
+									<button class="btn">Answer A</button>
+									<button class="btn">Answer B</button>
+									<button class="btn">Answer C</button>
+									<button class="btn">Answer D</button>
+								</div>
+							</div>
+						
+							<!-- --------------------------------------------------------------------------------- -->
+							<!-- div 3 Explanation Page-->
+							<div id="explanation" class="hide">
+								<h2 id="if-correct">Point</h2>
+								<p id="scenario-explanation">Detail Explanation</p>
+								<div class="control">
+									<button id="got-it-button" class="got-it btn hide">Got it!</button>
+								</div>
+							</div>
+						
+							<!-- --------------------------------------------------------------------------------- -->
+							<!-- div 4 Finish Page-->
+							<div id="finish" class="hide">
+								<h2 id="finish-module">Congratulations! You have finished this module!</h2>
+								<div class="control">
+									<button onclick="window.location='../dashboard.html';" id="finish-button" class="finish btn">Return to dashboard</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex justify-content-center">
+                        <a type="button" class="btn" href="module1.html">click here to go to the information</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-			
+      <footer>
 
-		</div>
+      </footer>
 
-		<!-- --------------------------------------------------------------------------------- -->
-		<!-- div 4 Explanation Page-->
-		<div id= "explanation" class = "hide">
-			<h2 id= "if-correct">Point</h2>
-			<p id= "scenario-explanation">Detail Explanation</p>
-			<div class= "control">
-				<button id ="got-it-button" class="got-it btn hide">Got it!</button>
-			</div>
-		</div>
+       <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="../js/jquery.slim.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.js"></script>
 
-		<!-- --------------------------------------------------------------------------------- -->
-		<!-- div 5 Finish Page-->
-		<div id= "finish" class = "hide">
-			<h2 id= "finish-module">Congratulations! You have finished this module!</h2>
-			<div class= "control">
-				<button onclick="window.location='index.html';"id ="finish-button" class="finish btn">Go back to home page</button>
-			</div>
-		</div>
-	</div>
-
-	
-
-</body>
+  </body>
 </html>

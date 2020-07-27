@@ -1,0 +1,22 @@
+.game {
+    padding: 50px;
+    margin: 20px;
+    height: 480px;
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid #9FA8DA;
+}
+
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+
+.hide{
+	display: none;
+}
+
+.control{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
