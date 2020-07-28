@@ -1,8 +1,9 @@
 .jumbotron {
-    background-color: #9FA8DA;
+    background-color: #424874;
     padding: 20px;
     margin: 0px;
     color: white;
+    border-radius: 0;
 }
 
 .jumbotron h4 {
@@ -19,7 +20,7 @@ h5 {
 }
 
 .navbar {
-    background-color: #9FA8DA;
+    background-color: #a6b1e1;
     font-style: italic;
     color: white;
     padding: 15px;
@@ -44,7 +45,7 @@ hr {
 
 .description {
     margin-top: 20px;
-    border: 2px solid black;
+    border: 2px solid #a6b1e1;
     padding: 15px;
     border-radius: 25px;
 }
@@ -52,7 +53,7 @@ hr {
 .btn {
     font-style: italic;
     color: white;
-    background-color: #9FA8DA;
+    background-color: #a6b1e1;
     margin-bottom: 20px;
     border-radius: 12px;
 }

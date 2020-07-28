@@ -2,7 +2,7 @@
     padding: 50px;
     margin: 10px;
     text-align: center;
-    background-color: #9FA8DA;
+    background-color: #a6b1e1;
     border-radius: 20px;
     color: white;
     font-style: italic;
@@ -11,7 +11,7 @@
 .tile:hover {
     color: white;
     text-decoration: none;
-    border: 5px solid black;
+    border: 5px solid #424874;
 }
 
 .progress-doughnut {
@@ -22,5 +22,6 @@
 }
 
 .percent {
-    margin-top: 35px;
+    margin-top: 25px;
+    font-size: 30px;
 }

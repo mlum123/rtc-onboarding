@@ -11,6 +11,11 @@
 	box-sizing: border-box;
 }
 
-.hide{
+.hide {
 	display: none;
+}
+
+/* if answer choice is too long, make it wrap to multiple lines in the button */
+.btn-group-vertical .btn {
+    white-space: normal;
 }
