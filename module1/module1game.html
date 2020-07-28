@@ -58,32 +58,23 @@
                 <div class="content col-9">
                     <div class="row">
                         <h2>&nbsp RTC EVENTS</h2>
-                        <h4 class="ml-auto"><em>progress: 20%</em></h4>
+                        <h5 class="ml-auto"><em>progress: 20%</em></h5>
                     </div>
                     <div class="game">
                         <div>
 
 							<!-- div 1 Start Page-->
 							<div id="start">
-								<div class="control">
-									<button id="start-button" class="start btn">Start Game</button>
-								</div>
-							</div>
-
-							<!-- --------------------------------------------------------------------------------- -->
-							<!-- div 2 Reading Page-->
-							<div id= "reading" class = "hide">
-								<h2 id= "reading-point">Point</h2>
-								<p id= "reading-explanation">Detail Explanation</p>
-								<div class= "control">
-									<button id ="back-button" class="back btn hide">Back</button>
-									<button id ="next-button" class="next btn hide">Next</button>
-									<button id ="go-to-scenario-button" class="go-scenario btn hide">Test Yourself!</button>
+								<div id="instructions">
+                                    <p>Now, you'll go through a set of questions and scenarios to test your knowledge of what you've learned in this module!</p>
+                                    <p>Ready to begin?</p>
+                                    <p> Click the button to start!</p>
+                                    <button id="go-to-scenario-button" class="btn">Start Game</button>
 								</div>
 							</div>
 						
 							<!-- --------------------------------------------------------------------------------- -->
-							<!-- div 2 Scenario + Question Page-->
+							<!-- div 3 Scenario + Question Page-->
 							<div id="questions" class="hide">
 								<div id="image">
 									<img src="">
@@ -93,7 +84,7 @@
 									<p>Scenario</p>
 								</div>
 						
-								<div id="options" class="btn-grid">
+								<div id="options" class="btn-group-vertical">
 									<button class="btn">Answer A</button>
 									<button class="btn">Answer B</button>
 									<button class="btn">Answer C</button>
@@ -102,22 +93,18 @@
 							</div>
 						
 							<!-- --------------------------------------------------------------------------------- -->
-							<!-- div 3 Explanation Page-->
+							<!-- div 4 Explanation Page-->
 							<div id="explanation" class="hide">
 								<h2 id="if-correct">Point</h2>
 								<p id="scenario-explanation">Detail Explanation</p>
-								<div class="control">
-									<button id="got-it-button" class="got-it btn hide">Got it!</button>
-								</div>
+								<button id="got-it-button" class="got-it btn hide">Got it!</button>
 							</div>
 						
 							<!-- --------------------------------------------------------------------------------- -->
-							<!-- div 4 Finish Page-->
+							<!-- div 5 Finish Page-->
 							<div id="finish" class="hide">
 								<h2 id="finish-module">Congratulations! You have finished this module!</h2>
-								<div class="control">
-									<button onclick="window.location='../dashboard.html';" id="finish-button" class="finish btn">Return to dashboard</button>
-								</div>
+								<button onclick="window.location='../dashboard.html';" id="finish-button" class="finish btn">Return to dashboard</button>
 							</div>
 						</div>
 					</div>

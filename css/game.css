@@ -14,9 +14,3 @@
 .hide{
 	display: none;
 }
-
-.control{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}

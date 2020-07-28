@@ -1,18 +1,12 @@
-const startButton = document.getElementById('start-button')
-const nextButton = document.getElementById('next-button')
-const backButton = document.getElementById('back-button')
+const instructions = document.getElementById('instructions')
 const goToScenarioButton = document.getElementById('go-to-scenario-button')
 const gotItButton = document.getElementById('got-it-button')
 
 
 const startPage = document.getElementById('start')
-const readingPage = document.getElementById('reading')
 const scenarioPage = document.getElementById('questions')
 const explanationPage = document.getElementById('explanation')
 const finishPage = document.getElementById('finish')
-
-const readingPoint = document.getElementById('reading-point')
-const readingExplanation = document.getElementById('reading-explanation')
 
 const scenarioDescription = document.getElementById('scenario')
 const answerButtonsElement = document.getElementById('options')
@@ -20,20 +14,7 @@ const answerButtonsElement = document.getElementById('options')
 const ifAnswerCorrect = document.getElementById('if-correct')
 const answerExplanation = document.getElementById('scenario-explanation')
 
-let readingIndex = 0
 let questionIndex = 0
-
-startButton.addEventListener('click', startModule)
-nextButton.addEventListener('click', () => {
-	readingIndex ++
-	showReading(readings[readingIndex])
-})
-
-backButton.addEventListener('click', () => {
-	readingIndex --
-	showReading(readings[readingIndex])
-	
-})
 
 goToScenarioButton.addEventListener('click', () => {
 	showScenario(scenarios[questionIndex])
@@ -53,36 +34,14 @@ gotItButton.addEventListener('click', () => {
 
 function startModule(){
 	startPage.classList.add('hide')
-	readingPage.classList.remove('hide')
+	scenarioPage.classList.remove('hide')
 	nextButton.classList.remove('hide')
-	showReading(readings[readingIndex])
-}
-
-function showReading(reading){
-	readingPoint.innerText = reading.point
-	readingExplanation.innerText = reading.details
-	if (readingIndex +1 >= readings.length){
-		nextButton.classList.add('hide')
-		goToScenarioButton.classList.remove('hide')
-	}
-	else{
-		nextButton.classList.remove('hide')
-		goToScenarioButton.classList.add('hide')
-	}
-	
-	if (readingIndex > 0){
-		backButton.classList.remove('hide')
-	}
-	if (readingIndex == 0){
-		backButton.classList.add('hide')
-	}
 }
 
 function showScenario(scenario){
 	resetState()
+	instructions.classList.add('hide')
 	goToScenarioButton.classList.add('hide')
-	backButton.classList.add('hide')
-	readingPage.classList.add('hide')
 	scenarioPage.classList.remove('hide')
 	scenarioDescription.innerText = scenario.question
 	scenario.answers.forEach(answer => {
@@ -91,11 +50,9 @@ function showScenario(scenario){
 		button.classList.add('btn')
 		if (answer.correct){
 			button.dataset.correct = answer.correct
-			
 		}
 		button.addEventListener('click', selectAnswer)
 		answerButtonsElement.appendChild(button)
-		
 	})
 }
 
@@ -129,21 +86,6 @@ function resetState(){
 		answerButtonsElement.removeChild(answerButtonsElement.firstChild)
 	}
 }
-
-const readings = [
-	{
-		point:'Show up',
-		details: ' Showing up and being on time is the bare minimum of professionalism. When you commit to attending something, such as an event, meeting or webinar, breaking your word is disrespectful of others’ time and breaks their confidence in you, and RTC. Honor your commitments and build trust that will take you far in your career. Note: Breaking this trust within the RTC community can result in suspension of access to opportunities like company events, webinars, office hours, etc. and could even result in being removed from the Fellowship program.'
-	},
-	{
-		point:'Canceling',
-		details: 'If something unforeseeable happens that requires you to cancel, give at least 24 hours’ notice. Keep in mind that a last-minute cancellation is almost as disrespectful as not showing up. If you have a difficult time remembering things, implement calendar reminders. Showing you are organized, responsible and trustworthy goes very far in creating good working relationships.'
-	},
-	{
-		point:'Show your appreciation', 
-		details: 'Take the time to get the name(s) of your host(s) and send them a quick note of thanks via email or LinkedIn if their information is accessible. Tell them about something specific and ideally unique that you learned from or appreciated about the event. This doesn’t happen nearly enough so it will make you stand out in a positive light and expand your network!'
-	}
-]
 
 const scenarios = [
 	{

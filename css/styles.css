@@ -2,6 +2,7 @@
     background-color: #9FA8DA;
     padding: 20px;
     margin: 0px;
+    color: white;
 }
 
 .jumbotron h4 {
@@ -11,6 +12,10 @@
 h2 {
     margin-top: 20px;
     font-weight: bold;
+}
+
+h5 {
+    margin-top: 20px;
 }
 
 .navbar {
