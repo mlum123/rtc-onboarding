@@ -2,19 +2,14 @@ const userNotExistAlert = document.getElementById('user-not-exist-alert');
 const wrongPasswordAlert = document.getElementById('wrong-password-alert');
 
 function logInSuccessful(){
-	
-	for (i = 0; i < users.length; i++){
-		if(document.getElementById("email").value === users[i].email){
-			if(document.getElementById("password").value != users[i].password){
-				showWrongPasswordMessage();
-			}
-			
-
-		}
+	if(checkLogIn() === 2){
+		showUserNotExistMessage();
+	}
+	else if(checkLogIn() === 1){
+		showWrongPasswordMessage();
 	}
 
-	showUserNotExistMessage();
-
+	
 }
 
 
@@ -26,6 +21,18 @@ function showWrongPasswordMessage(){
 function showUserNotExistMessage(){
 	userNotExistAlert.classList.remove("hide");
 	wrongPasswordAlert.classList.add("hide");
+}
+
+function checkLogIn(){
+	for(i = 0; i < users.length;i++){
+		if (document.getElementById('email').value === users[i].email){
+			if(document.getElementById('password').value === users[i].password){
+				return 0;
+			}
+			return 1;
+		}
+	}
+	return 2;
 }
 
 const users = [
