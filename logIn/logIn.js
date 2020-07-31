@@ -9,8 +9,8 @@ function logInSuccessful(){
 	for (i = 0; i < users.length; i++){
 		if(document.getElementById("email").value === users[i].email){
 			if(document.getElementById("password").value === users[i].password){
-				logInButton.addEventListener("click", window.location='logIn.html');
-				return true;
+				logInButton.onclick =  "window.location='../dashboard.html';";
+				return false;
 			}
 			showWrongPasswordMessage();
 			return false;
