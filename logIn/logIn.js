@@ -9,7 +9,7 @@ function logInSuccessful(){
 		showWrongPasswordMessage();
 	}
 	else{
-		document.getElementById('log-in-btn').click(function() {
+		document.getElementById('log-in-btn').onclick(function() {
     		window.location.href = '../dashboard.html';
 	});
 	}
