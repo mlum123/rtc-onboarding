@@ -11,7 +11,7 @@ function logInSuccessful(){
 	else{
 		document.getElementById('log-in-btn').addEventListener('click',()=>{
 		    
-		    	window.location.href = 'https://mlum123.github.io/rtc-onboarding/dashboard.html';
+		    	window.location = 'https://mlum123.github.io/rtc-onboarding/dashboard.html';
 		}); 
     		
 	}
