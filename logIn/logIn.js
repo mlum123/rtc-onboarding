@@ -1,15 +1,11 @@
 const userNotExistAlert = document.getElementById('user-not-exist-alert');
 const wrongPasswordAlert = document.getElementById('wrong-password-alert');
 
-
-const logInButton = document.getElementById('log-in-btn');
-
 function logInSuccessful(){
 	
 	for (i = 0; i < users.length; i++){
 		if(document.getElementById("email").value === users[i].email){
 			if(document.getElementById("password").value === users[i].password){
-				logInButton.onclick =  "window.location='../dashboard.html';";
 				return false;
 			}
 			showWrongPasswordMessage();
