@@ -9,7 +9,7 @@ function logInSuccessful(){
 		showWrongPasswordMessage();
 	}
 	else{
-		document.getElementById('log-in-btn').addEventListener('click',()=>{
+		document.getElementById('log-in-button').addEventListener('click',()=>{
 		    
 		    	window.location = 'https://mlum123.github.io/rtc-onboarding/dashboard.html';
 		}); 
