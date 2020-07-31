@@ -9,6 +9,8 @@ function logInSuccessful(){
 		showWrongPasswordMessage();
 	}
 	else{
+		userNotExistAlert.classList.add("hide");
+		wrongPasswordAlert.classList.add("hide");
 		document.getElementById('log-in-button').addEventListener('click',()=>{
 		    
 		    	window.location = 'https://mlum123.github.io/rtc-onboarding/dashboard.html';
