@@ -1,8 +1,9 @@
 const userNotExistAlert = document.getElementById('user-not-exist-alert');
 const wrongPasswordAlert = document.getElementById('wrong-password-alert');
+document.getElementById('log-in-button').disabled = true;
 
 function logInSuccessful(){
-	document.getElementById('log-in-button').disabled = true;
+	
 	if(checkLogIn() === 2){
 		
 		showUserNotExistMessage();
