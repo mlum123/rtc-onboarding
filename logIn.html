@@ -13,7 +13,7 @@
       <h1>/></h1>
       <p style="font-size: 25px">Rewriting the Code</p>
       <p style="margin-bottom: 25px; color: black">Onboarding Log In</p>
-      <form id="log-in-form" method="POST" action = "dashboard.html" onsubmit="return logInSuccessful()">
+      <form id="log-in-form">
 
         <br>
         <a href= "signUp.html" style="color: white"> Don't have an account yet? Sign up here</a><br>
@@ -23,15 +23,12 @@
         <p style = "font-size: 11px; color: black; margin-bottom: 10px"  id="wrong-password-alert"  class = "hide">Incorrect password</p>
         <br>
         <a href= "password_reset.html" style="color: white"> Forgot your password?</a><br>
-         <input type="submit" value="Log In"><br>
-
+        
         <br>
 
       </form>
 
-      <div class="">
-        <p></p>
-      </div>
+      <button onclick="logInSuccessful();" id ="log-in-button">Log In</button>
 
     </div>
   </body>
