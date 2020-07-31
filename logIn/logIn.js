@@ -2,8 +2,9 @@ const userNotExistAlert = document.getElementById('user-not-exist-alert');
 const wrongPasswordAlert = document.getElementById('wrong-password-alert');
 
 function logInSuccessful(){
+	document.getElementById('log-in-button').disabled = true;
 	if(checkLogIn() === 2){
-		document.getElementById('log-in-button').disabled = true;
+		
 		showUserNotExistMessage();
 	}
 	else if(checkLogIn() === 1){
@@ -12,10 +13,11 @@ function logInSuccessful(){
 	else{
 		userNotExistAlert.classList.add("hide");
 		wrongPasswordAlert.classList.add("hide");
-		document.getElementById('log-in-button').addEventListener('click',()=>{
+		document.getElementById('log-in-button').disabled = false;
+// 		document.getElementById('log-in-button').addEventListener('click',()=>{
 		    
-		    	window.location = '../dashboard.html';
-		}); 
+// 		    	window.location = '../dashboard.html';
+// 		}); 
     		
 	}
 
