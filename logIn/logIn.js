@@ -9,9 +9,11 @@ function logInSuccessful(){
 		showWrongPasswordMessage();
 	}
 	else{
-		document.getElementById('log-in-btn').onclick(function() {
-    		window.location.href = '../dashboard.html';
-	});
+		document.getElementById('log-in-btn').addEventListener('click',()=>{
+		    
+		    	window.location.href = '../dashboard.html';
+		}); 
+    		
 	}
 
 	
