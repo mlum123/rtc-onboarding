@@ -13,7 +13,7 @@
       <h1>/></h1>
       <p style="font-size: 25px">Rewriting the Code</p>
       <p style="margin-bottom: 25px; color: black">Onboarding Log In</p>
-      <form id="log-in-form" method="POST" action = "../dashboard.html" onsubmit="return logInSuccessful()">
+      <form id="log-in-form" method="POST" action = "../dashboard.html" onsubmit="logInSuccessful(); return false;">
         <br>
         <a href= "signUp.html" style="color: white"> Don't have an account yet? Sign up here</a><br>
         <input type="email" id="email" name="email" placeholder="email" style=" margin-top: 10px"required><br>
