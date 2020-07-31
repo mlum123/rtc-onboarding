@@ -8,6 +8,11 @@ function logInSuccessful(){
 	else if(checkLogIn() === 1){
 		showWrongPasswordMessage();
 	}
+	else{
+		document.getElementById('log-in-btn').click(function() {
+    		window.location.href = '../dashboard.html';
+	});
+	}
 
 	
 }
