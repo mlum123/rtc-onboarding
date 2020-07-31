@@ -6,7 +6,9 @@ function logInSuccessful(){
 	for (i = 0; i < users.length; i++){
 		if(document.getElementById("email").value === users[i].email){
 			if(document.getElementById("password").value === users[i].password){
-				return true;
+				userNotExistAlert.classList.add("hide");
+				wrongPasswordAlert.classList.add("hide");
+				window.location="dashboard.html";
 			}
 			showWrongPasswordMessage();
 			return false;
