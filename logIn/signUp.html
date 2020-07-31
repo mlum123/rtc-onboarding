@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign Up</title>
+	<link rel="stylesheet" href="style.css" type = "text/css">
+	<script defer src="signUp.js"></script>
+</head>
+
+<body>
+	<div class= "container">
+		<h1>/></h1>
+		<p style="font-size: 25px">Rewriting the Code</p>
+		<p style="margin-bottom: 20px; color: black">Onboarding Sign Up</p>
+		<form id='sign-up-form' method="POST" onsubmit="signUpSuccessfulShow(); return false;">
+			<br>
+			<input type="text" name="firstname" placeholder="first name" required><br>
+			<input type="text" name="lasttname" placeholder="last name" required><br>
+			<input id ="email" type="email" name="email" placeholder="email" required><br>
+			<input type="password" name="password" id="password" placeholder="password" min="5" required><br>
+			<input type="password" name="repassword" id="confirm-password" placeholder="re-enter your password" min="5" required><br>
+			<p style = "text-align: center;  font-size: 12px; color: black"  id="password-not-match-alert" class= "hide">Password not match</p>
+			<p style = "text-align: center; font-size: 12px; color: black"  id="user-already-exist-alert" class= "hide">User already exist. Try log in instead</p>
+			<br>
+			<input type="submit" value="Sign Up" id="sign-up-button">
+			<input type="reset" value = "Reset"><br>
+			<a href= "logIn.html" style="color: white"> Already have an account yet? Log in here</a>
+			<br><br>
+		</form>
+
+		<div id= "sign-up-successful" class= "hide">
+			<p style="font-size: 15px; margin-bottom: 25px; padding: 10px">You have successfully signed up! Check your email to confirm your account, and go back to the log in page once the account is confirmed.</p>
+
+			<button onclick="window.location='logIn.html';" id ="back-to-log-in-button">Back to Log In</button>
+		</div>
+	</div>
+</body>
+</html>
