@@ -13,7 +13,7 @@ function logInSuccessful(){
 		wrongPasswordAlert.classList.add("hide");
 		document.getElementById('log-in-button').addEventListener('click',()=>{
 		    
-		    	window.location = 'https://mlum123.github.io/rtc-onboarding/dashboard.html';
+		    	window.location = '../dashboard.html';
 		}); 
     		
 	}
