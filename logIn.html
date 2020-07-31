@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset = "UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Log In</title>
+      <link rel="stylesheet" href="style.css" type = "text/css">
+      <script defer src="logIn.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>/></h1>
+      <p style="font-size: 25px">Rewriting the Code</p>
+      <p style="margin-bottom: 25px; color: black">Onboarding Log In</p>
+<<<<<<< HEAD:logIn.html
+      <form id="log-in-form" method="POST" action = "dashboard.html" onsubmit="return logInSuccessful()">
+=======
+      <form id="log-in-form" method="POST" action = "../dashboard.html" onsubmit="logInSuccessful();">
+>>>>>>> c2f68e38b37e30c1bb38296796668a9373fcd4de:logIn/logIn.html
+        <br>
+        <a href= "signUp.html" style="color: white"> Don't have an account yet? Sign up here</a><br>
+        <input type="email" id="email" name="email" placeholder="email" style=" margin-top: 10px"required><br>
+        <input type="password" id="password" name="password" placeholder="password" min="5" required><br>
+        <p style = "font-size: 11px; color: black; margin-bottom: 10px"  id="user-not-exist-alert"  class = "hide">User does not exist</p>
+        <p style = "font-size: 11px; color: black; margin-bottom: 10px"  id="wrong-password-alert"  class = "hide">Incorrect password</p>
+        <br>
+        <a href= "password_reset.html" style="color: white"> Forgot your password?</a><br>
+<!--         use this button for github page -->
+        <button style="margin-top: 20px;" onclick = "logInSuccessful()" id ="log-in-button">Log In</button>
+        
+<!--         submit works fine if not hosted by github
+        <input id = "log-in-btn" type="submit" value="Log In"><br> -->
+
+        <br>
+
+      </form>
+
+      <div class="">
+        <p></p>
+      </div>
+
+    </div>
+  </body>
+</html>
