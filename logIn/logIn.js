@@ -3,6 +3,7 @@ const wrongPasswordAlert = document.getElementById('wrong-password-alert');
 
 function logInSuccessful(){
 	if(checkLogIn() === 2){
+		document.getElementById('log-in-button').disabled = true;
 		showUserNotExistMessage();
 	}
 	else if(checkLogIn() === 1){
