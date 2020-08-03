@@ -2,7 +2,7 @@
     padding: 50px;
     margin: 10px;
     text-align: center;
-    background-color: #9a7e92;
+    background-color: #83677b;
     border-radius: 20px;
     color: white;
     font-style: italic;
@@ -11,11 +11,11 @@
 .tile:hover {
     color: white;
     text-decoration: none;
-    border: 5px solid #424874;
+    border: 5px solid #2e1114;
 }
 
 .progress-doughnut {
-    border: 10px solid white;
+    border: 10px solid #501b1d;
     border-radius: 100px;
     height: 120px;
     width: 120px;

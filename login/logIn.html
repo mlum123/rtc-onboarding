@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset = "UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Log In</title>
+
+      <!-- Lato Font -->
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+		
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
+      
+      <!-- CSS -->
+      <link rel="stylesheet" href="../css/styles.css" />
+      <link rel="stylesheet" href="login.css" type ="text/css">
+      <script defer src="logIn.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>/></h1>
+      <p>Rewriting the Code</p>
+      <p><strong>Professional Etiquette</strong></p>
+      <p><strong>Onboarding Log-in</strong></p>
+      <form id="log-in-form">
+        <br>
+        <a href="signUp.html"> Don't have an account yet? Sign up here</a><br>
+        <input type="email" id="email" name="email" placeholder="email" style=" margin-top: 10px"required><br>
+        <input type="password" id="password" name="password" placeholder="password" min="5" required><br>
+        <p style ="font-size: 14px" id="user-not-exist-alert"  class="hide">User does not exist</p>
+        <p style ="font-size: 14px" id="wrong-password-alert"  class="hide">Incorrect password</p>
+        <br>
+        <a href="password_reset.html">Forgot your password?</a><br>
+        <br>
+      </form>
+
+      <button onclick="logInSuccessful();" id="log-in-button"><em>log in</em></button>
+
+    </div>
+  </body>
+</html>

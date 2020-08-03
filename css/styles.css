@@ -1,5 +1,9 @@
+body {
+    font-family: 'Lato'
+}
+
 .jumbotron {
-    background-color: #381517;
+    background-color: #2E1114;
     padding: 20px;
     margin: 0px;
     color: white;
@@ -8,11 +12,18 @@
 
 .jumbotron h4 {
     font-weight: bold;
+    font-size: 28px;
+}
+
+.jumbotron .rtc-logo {
+    font-size: 35px;
 }
 
 h2 {
     margin-top: 20px;
     font-weight: bold;
+    font-size: 40px;
+    color: #2E1114;
 }
 
 h5 {
@@ -20,8 +31,9 @@ h5 {
 }
 
 .navbar {
-    background-color: #9a7e92;
+    background-color: #64485c;
     font-style: italic;
+    font-size: 18px;
     color: white;
     padding: 15px;
 }
@@ -45,7 +57,7 @@ hr {
 
 .description {
     margin-top: 20px;
-    border: 2px solid #9a7e92;
+    border: 2px solid #64485c;
     padding: 15px;
     border-radius: 25px;
 }
@@ -53,7 +65,7 @@ hr {
 .btn {
     font-style: italic;
     color: white;
-    background-color: #9a7e92;
+    background-color: #64485c;
     margin-bottom: 20px;
     border-radius: 12px;
 }

@@ -8,7 +8,7 @@ function logInSuccessful(){
 			if(document.getElementById("password").value === users[i].password){
 				userNotExistAlert.classList.add("hide");
 				wrongPasswordAlert.classList.add("hide");
-				window.location="dashboard.html";
+				window.location="../dashboard.html";
 			}
 			showWrongPasswordMessage();
 			return false;
