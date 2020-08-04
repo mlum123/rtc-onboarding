@@ -1,4 +1,4 @@
-const userNotExistAlert = document.getElementById("password-not-match-alert");
+const userNotExistAlert = document.getElementById("user-not-exist-alert");
 const resetSuccessfulPage = document.getElementById("reset-successful");
 const resetHint = document.getElementById("reset-hint");
 const resetForm = document.getElementById("reset-password-form");
